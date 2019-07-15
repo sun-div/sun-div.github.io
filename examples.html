@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Tips  </title>
+    <link rel="stylesheet" href="mystyles.css">
+    <img src = "https://qcfindnow.com/wp-content/uploads/2019/03/52947220_385594092240387_6781263592378335232_o.jpg" alt="HandLettering 101" width=1300 height=400>
+
+      <script src="myScript.js"></script>
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="website.html">home</a>
+      <a href="tips.html">tips</a>
+      <a href="examples.html">examples</a>
+    </div>
+    <div class ="examples">
+        <h2> here are some of my examples from when I first started hand lettering!</h2>
+      <div >
+        <img src="first_project.JPG"" width="400px" height="400px" class="rotateimg180" />
+        <img src="image2.JPG" width="400px" height="400px" class="rotateimg180" />
+        <img src="IMG_4698.JPG" width="400px" height="400px" />
+      </div>
+      <div>
+      <h2>  these images are some of my projects that I have done while I've been learning. If you are not able to see these, click <a href = "pictures.html" > this link. </a></h2>
+  </body>
+
+  <script type="text/javascript">
+    var index=0;
+       function changeImg(){
+         [].forEach.call(document.images,function (v,i) { document.images[i].hidden = i!==index});
+         index = (index+1) % document.images.length;
+       }
+       window.onload = function () {setInterval(changeImg, 1000)};
+  </script>
+
+
+
+
+
+</html>
